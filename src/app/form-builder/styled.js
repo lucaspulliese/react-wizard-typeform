@@ -10,4 +10,6 @@ export const StepWrapper = styled.div`
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 `

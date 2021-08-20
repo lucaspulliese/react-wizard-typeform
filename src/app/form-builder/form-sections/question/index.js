@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { QuestionWrapper } from './styled';
 
 const Question = () => {
   return (
-    <div>
-    </div>
+    <QuestionWrapper>
+    </QuestionWrapper>
   );
 }
 

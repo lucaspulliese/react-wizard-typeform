@@ -1,13 +1,13 @@
 import styled from 'styled-components/macro';
 
-export const FormBuilderWrapper = styled.div`
-  height: 100%;
-  width: 100%;
+export const QuestionWrapper = styled.section`
   overflow: hidden;
+  width: 80%;
 `
 
-export const StepWrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+export const Text = styled.p`
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFF;
+  text-align: center;
 `

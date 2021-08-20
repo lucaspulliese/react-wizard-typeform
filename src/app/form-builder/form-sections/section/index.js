@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
+import { SectionWrapper, Text } from './styled';
 
-const Section = () => {
+const Section = ({ content }) => {
   return (
-    <div>
-    </div>
+    <SectionWrapper>
+      {content.map(item => (
+        <Text>{item.value}</Text>
+      ))}
+    </SectionWrapper>
   );
 }
 
