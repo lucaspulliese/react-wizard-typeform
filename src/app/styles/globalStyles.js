@@ -1,5 +1,5 @@
 // globalStyles.js
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components/macro';
  
 const GlobalStyle = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
