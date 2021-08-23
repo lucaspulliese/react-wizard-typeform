@@ -14,12 +14,17 @@ const FormBuilder = () => {
         return (
           <Section
             content={step.content}
+            onNextStep={() => setCurrentIndexForm(currentIndexForm + 1)}
           />
         )
         break;
 
       case 'question':
-        return <Question />
+        return (
+          <Question
+            content={step.content} 
+          />
+        )
         break;
       default:
         break;
@@ -28,8 +33,8 @@ const FormBuilder = () => {
 
   return (
     <FormBuilderWrapper>
-      {stepsData.map(step => 
-        <StepWrapper>
+      {stepsData.map((step, index) => 
+        <StepWrapper key={index} active={index === currentIndexForm}>
           {generateFormStep(step)}
         </StepWrapper>  
       )}

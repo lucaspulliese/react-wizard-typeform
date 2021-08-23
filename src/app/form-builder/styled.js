@@ -11,5 +11,11 @@ export const StepWrapper = styled.div`
   width: 100vw;
   overflow: hidden;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
   align-items: center;
+  transition: all .5s ease;
+  opacity: ${props => props.active ? 1 : 0};
+  z-index: ${props => props.active ? '1' : '-1'};
 `

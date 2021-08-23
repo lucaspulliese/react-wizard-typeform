@@ -5,6 +5,7 @@ export const Button = styled.button`
   font-family: inherit;
   font-weight: 700;
   cursor: pointer;
+  font-size: 18px;
   transition-duration: 0.1s;
   transition-property: background-color, color, border-color, opacity, box-shadow;
   transition-timing-function: ease-out;
@@ -17,4 +18,9 @@ export const Button = styled.button`
   background-color: rgb(255, 255, 255);
   color: rgb(128, 128, 128);
   border-radius: 4px;
+`
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `

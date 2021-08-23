@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SectionWrapper, Text } from './styled';
+import { ButtonComp } from 'app/form-builder/form-components';
 
-const Section = ({ content }) => {
+const Section = ({ content, onNextStep }) => {
   return (
     <SectionWrapper>
-      {content.map(item => (
-        <Text>{item.value}</Text>
+      {content.map((item, index) => (
+        <Text key={index}>{item.value}</Text>
       ))}
+
+      <ButtonComp onClick={onNextStep}>Sure</ButtonComp>
     </SectionWrapper>
   );
 }

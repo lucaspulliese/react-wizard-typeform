@@ -1,10 +1,13 @@
 import React from 'react';
-import { Button } from './styled';
+import { Button, ButtonWrapper } from './styled';
 
-const ButtonComp = () => {
+const ButtonComp = ({ children, onClick }) => {
   return (
-    <Button>
-    </Button>
+    <ButtonWrapper>
+      <Button onClick={onClick}>
+        { children }
+      </Button>
+    </ButtonWrapper>
   );
 }
 
