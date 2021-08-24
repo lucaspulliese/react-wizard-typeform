@@ -21,7 +21,7 @@ const stepsData = [
     subtitle: '',
     content: [
       {
-        type: 'checkbox',
+        type: 'checkbox-image',
         values: [
           {
             id: 1,

@@ -1,13 +1,14 @@
 import React from 'react';
-import { Checkbox } from 'app/form-builder/form-types';
-import { QuestionWrapper } from './styled';
+import { CheckboxImage } from 'app/form-builder/form-types';
+import { QuestionWrapper, AnswersWrapper, QuestionTitle } from './styled';
 
-const Question = ({ content }) => {
+const Question = ({ content, title }) => {
   const formType = item => {
     switch (item.type) {
-      case 'checkbox':
+      case 'checkbox-image':
         return (
-          <Checkbox
+          <CheckboxImage
+            values={item.values}
           />
         )
         break;
@@ -18,6 +19,12 @@ const Question = ({ content }) => {
 
   return (
     <QuestionWrapper>
+      <QuestionTitle>{title}</QuestionTitle>
+      <AnswersWrapper>
+        {content.map(item => (
+          formType(item)
+        ))}
+      </AnswersWrapper>
     </QuestionWrapper>
   );
 }

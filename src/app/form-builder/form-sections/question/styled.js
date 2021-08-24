@@ -5,9 +5,13 @@ export const QuestionWrapper = styled.section`
   width: 80%;
 `
 
-export const Text = styled.p`
+export const QuestionTitle = styled.h3`
   font-size: 24px;
   line-height: 32px;
   color: #FFF;
   text-align: center;
+`
+
+export const AnswersWrapper = styled.div`
+  margin-top: 32px;
 `

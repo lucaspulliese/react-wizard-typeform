@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Checkbox = () => {
+const CheckboxImage = () => {
   return (
     <div></div>
   );
 }
 
-export default Checkbox;
+export default CheckboxImage;

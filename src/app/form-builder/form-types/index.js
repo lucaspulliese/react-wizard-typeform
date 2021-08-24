@@ -1,4 +1,4 @@
-import Checkbox from './checkbox';
+import CheckboxImage from './checkbox-image';
 
-export { Checkbox };
+export { CheckboxImage };
  
