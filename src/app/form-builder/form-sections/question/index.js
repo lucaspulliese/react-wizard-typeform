@@ -1,13 +1,14 @@
 import React from 'react';
-import { CheckboxImage } from 'app/form-builder/form-types';
+import { RadioImage } from 'app/form-builder/form-types';
 import { QuestionWrapper, AnswersWrapper, QuestionTitle } from './styled';
 
-const Question = ({ content, title }) => {
+const Question = ({ content, title, questionId }) => {
   const formType = item => {
     switch (item.type) {
-      case 'checkbox-image':
+      case 'radio-image':
         return (
-          <CheckboxImage
+          <RadioImage
+            questionId={questionId}
             values={item.values}
           />
         )

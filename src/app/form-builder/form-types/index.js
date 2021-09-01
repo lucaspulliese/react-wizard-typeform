@@ -1,4 +1,4 @@
-import CheckboxImage from './checkbox-image';
+import RadioImage from './radio-image';
 
-export { CheckboxImage };
+export { RadioImage };
  

@@ -2,14 +2,15 @@ import styled from 'styled-components/macro';
 
 export const QuestionWrapper = styled.section`
   overflow: hidden;
-  width: 80%;
+  width: 720px;
+  margin: 0 auto;
 `
 
 export const QuestionTitle = styled.h3`
   font-size: 24px;
   line-height: 32px;
   color: #FFF;
-  text-align: center;
+  text-align: left;
 `
 
 export const AnswersWrapper = styled.div`

@@ -22,6 +22,7 @@ const FormBuilder = () => {
       case 'question':
         return (
           <Question
+            questionId={step.question_id}
             title={step.title}
             content={step.content} 
           />

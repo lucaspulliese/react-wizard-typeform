@@ -21,7 +21,7 @@ const stepsData = [
     subtitle: '',
     content: [
       {
-        type: 'checkbox-image',
+        type: 'radio-image',
         values: [
           {
             id: 1,
@@ -32,6 +32,36 @@ const stepsData = [
             id: 2,
             image: '/personal.png',
             label: 'Personal',
+          },
+        ],
+      },
+    ]
+  },
+  {
+    id: 3,
+    question_id: 3,
+    type: 'question',
+    title: 'Great. What is the size of your company?This question is required. *',
+    subtitle: '',
+    content: [
+      {
+        type: 'checkbox',
+        values: [
+          {
+            id: 1,
+            label: 'Self-Employed/Freelancer',
+          },
+          {
+            id: 2,
+            label: '1-10 employees',
+          },
+          {
+            id: 3,
+            label: '11-50 employees',
+          },
+          {
+            id: 4,
+            label: '51-200 employees',
           },
         ],
       },
