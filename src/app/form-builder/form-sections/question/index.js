@@ -1,8 +1,8 @@
 import React from 'react';
 import { RadioImage } from 'app/form-builder/form-types';
-import { QuestionWrapper, AnswersWrapper, QuestionTitle } from './styled';
+import { QuestionWrapper, AnswersWrapper, QuestionTitle, ArrowsWrapper, ArrowsButton } from './styled';
 
-const Question = ({ content, title, questionId }) => {
+const Question = ({ content, title, questionId, onNextStep }) => {
   const formType = item => {
     switch (item.type) {
       case 'radio-image':
@@ -25,6 +25,11 @@ const Question = ({ content, title, questionId }) => {
         {content.map(item => (
           formType(item)
         ))}
+
+        <ArrowsWrapper>
+          <ArrowsButton>a</ArrowsButton>
+          <ArrowsButton onClick={onNextStep}>b</ArrowsButton>
+        </ArrowsWrapper>
       </AnswersWrapper>
     </QuestionWrapper>
   );

@@ -1,9 +1,9 @@
 import React from 'react';
-import { RadioImagesWrapper, CheckboxOption } from './styled';
+import { CheckboxWrapper, CheckboxOption } from './styled';
 
 const Checkbox = ({ values, questionId }) => {
   return (
-    <RadioImagesWrapper>
+    <CheckboxWrapper>
       {values.map(val => (
         <CheckboxOption key={val.id}>
           <img src={val.image} alt="" />
@@ -12,7 +12,7 @@ const Checkbox = ({ values, questionId }) => {
           <div></div>
         </CheckboxOption>
       ))}
-    </RadioImagesWrapper>
+    </CheckboxWrapper>
   );
 }
 

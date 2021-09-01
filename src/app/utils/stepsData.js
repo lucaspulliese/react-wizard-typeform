@@ -41,7 +41,7 @@ const stepsData = [
     id: 3,
     question_id: 3,
     type: 'question',
-    title: 'Great. What is the size of your company?This question is required. *',
+    title: 'Great. What is the size of your company? This question is required. *',
     subtitle: '',
     content: [
       {

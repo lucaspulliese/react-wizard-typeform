@@ -25,6 +25,7 @@ const FormBuilder = () => {
             questionId={step.question_id}
             title={step.title}
             content={step.content} 
+            onNextStep={() => setCurrentIndexForm(currentIndexForm + 1)}
           />
         )
         break;
