@@ -1,13 +1,26 @@
 import React from 'react';
-import { RadioImage, Checkbox } from 'app/form-builder/form-types';
+import { RadioImage, Checkbox, Select } from 'app/form-builder/form-types';
 import { QuestionWrapper, AnswersWrapper, QuestionTitle, ArrowsWrapper, ArrowsButton } from './styled';
 
-const Question = ({ content, title, questionId, onNextStep }) => {
+const Question = ({ 
+  content, 
+  title, 
+  control,
+  setValue,
+  getValues,
+  register,
+  questionId, 
+  onNextStep 
+}) => {
+
   const formType = item => {
     switch (item.type) {
       case 'radio-image':
         return (
           <RadioImage
+            control={control}
+            getValues={getValues}
+            setValue={setValue}
             questionId={questionId}
             values={item.values}
           />
@@ -16,6 +29,20 @@ const Question = ({ content, title, questionId, onNextStep }) => {
       case 'checkbox':
         return (
           <Checkbox
+            control={control}
+            getValues={getValues}
+            setValue={setValue}
+            questionId={questionId}
+            values={item.values}
+          />
+        )
+        break;
+      case 'select':
+        return (
+          <Select
+            control={control}
+            getValues={getValues}
+            setValue={setValue}
             questionId={questionId}
             values={item.values}
           />

@@ -66,6 +66,36 @@ const stepsData = [
         ],
       },
     ]
+  },
+  {
+    id: 4,
+    question_id: 4,
+    type: 'question',
+    title: 'And which type of industry do you work in? This question is required. *',
+    subtitle: '',
+    content: [
+      {
+        type: 'select',
+        values: [
+          {
+            id: 1,
+            label: 'Accounting',
+          },
+          {
+            id: 2,
+            label: 'Animation',
+          },
+          {
+            id: 3,
+            label: 'Apparel & Fashion',
+          },
+          {
+            id: 4,
+            label: 'Arts and Crafts',
+          },
+        ],
+      },
+    ]
   }
 ];
 

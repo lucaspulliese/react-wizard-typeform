@@ -5,7 +5,7 @@ import { Section, Question } from './form-sections';
 import { useForm } from "react-hook-form";
 
 const FormBuilder = () => {
-  const { register, handleSubmit, watch } = useForm();
+  const { register, control, reset, setValue, getValues } = useForm();
   const [currentIndexForm, setCurrentIndexForm] = useState(0);
 
   const generateFormStep = (step) => {
@@ -22,6 +22,10 @@ const FormBuilder = () => {
       case 'question':
         return (
           <Question
+            control={control}
+            setValue={setValue}
+            getValues={getValues}
+            register={register}
             questionId={step.question_id}
             title={step.title}
             content={step.content} 

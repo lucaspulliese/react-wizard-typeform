@@ -1,7 +1,6 @@
 import styled from 'styled-components/macro';
 
 export const QuestionWrapper = styled.section`
-  overflow: hidden;
   width: 720px;
   margin: 0 auto;
 `
