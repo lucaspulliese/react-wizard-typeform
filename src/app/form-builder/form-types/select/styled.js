@@ -10,8 +10,12 @@ export const InputSelect = styled.input`
   color: #FFF;
   background: none;
   font-size: 28px;
+  transition: all .2s ease;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 1px;
   padding: 0px 24px 12px 0px;
+  &:focus {
+    box-shadow: rgb(255, 255, 255) 0px 2px;
+  }
 `
 
 export const OptionsWrapper = styled.ul`
@@ -34,4 +38,8 @@ export const Option = styled.li`
   &:hover {
     background: rgb(142, 212, 196);
   }
+  ${({ selected }) => selected && `
+    background-color: rgb(110, 199, 179);
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 0px 2px inset;
+  `}
 `

@@ -8,7 +8,6 @@ const Question = ({
   control,
   setValue,
   getValues,
-  register,
   questionId, 
   onNextStep 
 }) => {
@@ -25,7 +24,6 @@ const Question = ({
             values={item.values}
           />
         )
-        break;
       case 'checkbox':
         return (
           <Checkbox
@@ -36,7 +34,6 @@ const Question = ({
             values={item.values}
           />
         )
-        break;
       case 'select':
         return (
           <Select
@@ -47,7 +44,6 @@ const Question = ({
             values={item.values}
           />
         )
-        break;
       default:
         break;
     }
@@ -57,8 +53,10 @@ const Question = ({
     <QuestionWrapper>
       <QuestionTitle>{title}</QuestionTitle>
       <AnswersWrapper>
-        {content.map(item => (
-          formType(item)
+        {content.map((item, index) => (
+          <div key={index}>
+            {formType(item)}
+          </div>
         ))}
 
         <ArrowsWrapper>

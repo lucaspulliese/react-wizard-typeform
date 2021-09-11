@@ -5,8 +5,10 @@ import { Section, Question } from './form-sections';
 import { useForm } from "react-hook-form";
 
 const FormBuilder = () => {
-  const { register, control, reset, setValue, getValues } = useForm();
+  const { register, control, watch, setValue, getValues } = useForm();
   const [currentIndexForm, setCurrentIndexForm] = useState(0);
+
+  console.log(watch());
 
   const generateFormStep = (step) => {
     switch (step.type) {
@@ -17,8 +19,6 @@ const FormBuilder = () => {
             onNextStep={() => setCurrentIndexForm(currentIndexForm + 1)}
           />
         )
-        break;
-
       case 'question':
         return (
           <Question
@@ -32,7 +32,6 @@ const FormBuilder = () => {
             onNextStep={() => setCurrentIndexForm(currentIndexForm + 1)}
           />
         )
-        break;
       default:
         break;
     }

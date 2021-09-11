@@ -96,6 +96,19 @@ const stepsData = [
         ],
       },
     ]
+  },
+  {
+    id: 5,
+    question_id: 5,
+    type: 'question',
+    title: "If you'd like us to follow up with you, please be sure to leave your email address below :)",
+    subtitle: '',
+    content: [
+      {
+        type: 'input',
+        placeholder: 'name@example.com'
+      },
+    ]
   }
 ];
 
