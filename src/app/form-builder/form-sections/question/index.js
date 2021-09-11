@@ -1,5 +1,5 @@
 import React from 'react';
-import { RadioImage } from 'app/form-builder/form-types';
+import { RadioImage, Checkbox } from 'app/form-builder/form-types';
 import { QuestionWrapper, AnswersWrapper, QuestionTitle, ArrowsWrapper, ArrowsButton } from './styled';
 
 const Question = ({ content, title, questionId, onNextStep }) => {
@@ -8,6 +8,14 @@ const Question = ({ content, title, questionId, onNextStep }) => {
       case 'radio-image':
         return (
           <RadioImage
+            questionId={questionId}
+            values={item.values}
+          />
+        )
+        break;
+      case 'checkbox':
+        return (
+          <Checkbox
             questionId={questionId}
             values={item.values}
           />

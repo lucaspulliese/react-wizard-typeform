@@ -2,16 +2,20 @@ import styled from 'styled-components/macro';
 
 export const CheckboxWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: -8px;
+  margin-right: -8px;
 `
 
 export const CheckboxOption = styled.label`
-  height: 297px;
-  width: 48%;
-  padding: 4px;
+  width: calc(50% - 8px);
+  padding: 10px 6px 7px 6px;
+  display: flex;
+  cursor: pointer;
   border-radius: 4px;
   position: relative;
-  display: flex;
+  margin-right: 8px;
+  margin-bottom: 8px;
   flex-direction: column;
   div {
     position: absolute;
@@ -30,6 +34,7 @@ export const CheckboxOption = styled.label`
     width: 1px;
     height: 1px;
     opacity: 0;
+    display: none;
     visibility: hidden;
     &:checked + div {
       background-color: rgba(255,255,255, 0.3);
