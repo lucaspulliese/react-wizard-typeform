@@ -26,8 +26,6 @@ Show the potential of react hook form for the creation of wizard forms. Also lea
 
 ├── __utils__ <br />
 │&emsp; ├── __stepsData.js__ [JSON form structure]<br />
-=======
-Show the potential of react hook form for the creation of wizard forms. Also leave a base form builder for programmers to reuse on their projects.
 
 ## Template
 
