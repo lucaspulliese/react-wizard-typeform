@@ -25,12 +25,12 @@ const stepsData = [
         values: [
           {
             id: 1,
-            image: '/business.png',
+            image: './business.png',
             label: 'Business',
           },
           {
             id: 2,
-            image: '/personal.png',
+            image: './personal.png',
             label: 'Personal',
           },
         ],

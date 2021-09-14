@@ -39,6 +39,7 @@ export const CheckboxOption = styled.label`
     max-width: 80%;
     max-height: 80%;
     margin: 0 auto;
+    margin-top: 15px;
   }
   span {
     margin: 4px 5px;

@@ -29,6 +29,7 @@ const FormBuilder = () => {
             questionId={step.question_id}
             title={step.title}
             content={step.content} 
+            onPrevStep={() => setCurrentIndexForm(currentIndexForm - 1)}
             onNextStep={() => setCurrentIndexForm(currentIndexForm + 1)}
           />
         )

@@ -38,4 +38,7 @@ export const ArrowsButton = styled.button`
     border-radius: 4px 0 0 4px;
     border-right: 1px solid rgba(128, 128, 128, 0.3);
   }
+  svg {
+    fill: rgba(128, 128, 128);
+  }
 `
