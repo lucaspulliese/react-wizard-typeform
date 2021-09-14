@@ -4,7 +4,6 @@ This projects is a work in progress base project to create a wizard form with [r
 
 ## Motivation
 
-<<<<<<< HEAD
 Show the potential of react hook form for the creation of wizard forms. Also leave a base form builder for programmers to reuse on their projects. In the console I show how the answers are saved. 
 
 ## Documentation
@@ -38,4 +37,3 @@ The design is based on [this template](https://www.typeform.com/templates/t/user
 
 ![image](https://user-images.githubusercontent.com/15676286/132963021-e057f0ef-163e-4536-a8d0-16a030e849b6.png)
 ![image](https://user-images.githubusercontent.com/15676286/132963027-64fcbc87-d6d2-485d-b9c9-d7b1ed66f7a4.png)
->>>>>>> ab5e2b7dc2107e185c48b6e7d88db3bf26cbee7c
