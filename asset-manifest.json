@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/react-wizard-typeform/static/js/main.3c012205.chunk.js",
-    "main.js.map": "/react-wizard-typeform/static/js/main.3c012205.chunk.js.map",
+    "main.js": "/react-wizard-typeform/static/js/main.69094a37.chunk.js",
+    "main.js.map": "/react-wizard-typeform/static/js/main.69094a37.chunk.js.map",
     "runtime-main.js": "/react-wizard-typeform/static/js/runtime-main.479a58c7.js",
     "runtime-main.js.map": "/react-wizard-typeform/static/js/runtime-main.479a58c7.js.map",
     "static/js/2.cf872e97.chunk.js": "/react-wizard-typeform/static/js/2.cf872e97.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.479a58c7.js",
     "static/js/2.cf872e97.chunk.js",
-    "static/js/main.3c012205.chunk.js"
+    "static/js/main.69094a37.chunk.js"
   ]
 }
