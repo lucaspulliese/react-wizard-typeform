@@ -1,11 +1,12 @@
 import React from 'react';
-import { RadioImage, Checkbox, Select } from 'app/form-builder/form-types';
+import { RadioImage, Checkbox, Select, InputText } from 'app/form-builder/form-types';
 import { QuestionWrapper, AnswersWrapper, QuestionTitle, ArrowsWrapper, ArrowsButton } from './styled';
 
 const Question = ({ 
   content, 
   title, 
   control,
+  register,
   setValue,
   getValues,
   questionId, 
@@ -43,6 +44,14 @@ const Question = ({
             setValue={setValue}
             questionId={questionId}
             values={item.values}
+          />
+        )
+      case 'input':
+        return (
+          <InputText
+            register={register}
+            questionId={questionId}
+            placeholder={item.placeholder}
           />
         )
       default:

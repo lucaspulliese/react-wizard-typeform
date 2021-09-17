@@ -39,7 +39,7 @@ const stepsData = [
   },
   {
     id: 3,
-    question_id: 3,
+    question_id: 2,
     type: 'question',
     title: 'Great. What is the size of your company? This question is required. *',
     subtitle: '',
@@ -69,7 +69,7 @@ const stepsData = [
   },
   {
     id: 4,
-    question_id: 4,
+    question_id: 3,
     type: 'question',
     title: 'And which type of industry do you work in? This question is required. *',
     subtitle: '',
@@ -99,7 +99,7 @@ const stepsData = [
   },
   {
     id: 5,
-    question_id: 5,
+    question_id: 4,
     type: 'question',
     title: "If you'd like us to follow up with you, please be sure to leave your email address below :)",
     subtitle: '',
@@ -109,7 +109,23 @@ const stepsData = [
         placeholder: 'name@example.com'
       },
     ]
-  }
+  },
+  {
+    id: 6,
+    type: 'section',
+    should_save: true,
+    hide_next_button: true,
+    content: [
+      {
+        type: 'text',
+        value: 'Your data has been saved :)',
+      },
+      {
+        type: 'text',
+        value: "It's in your local storage",
+      }
+    ]
+  },
 ];
 
 export default stepsData;

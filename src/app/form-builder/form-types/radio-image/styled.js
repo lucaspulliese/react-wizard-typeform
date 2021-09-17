@@ -12,6 +12,7 @@ export const CheckboxOption = styled.label`
   border-radius: 4px;
   position: relative;
   display: flex;
+  cursor: pointer;
   flex-direction: column;
   div {
     position: absolute;

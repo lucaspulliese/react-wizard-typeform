@@ -16,6 +16,6 @@ export const StepWrapper = styled.div`
   left: 0;
   align-items: center;
   transition: all .5s ease;
-  opacity: ${props => props.active ? 1 : 0};
-  z-index: ${props => props.active ? '1' : '-1'};
+  opacity: ${props => props.active ? 1 : 1};
+  z-index: ${props => props.active ? '1' : '1'};
 `
