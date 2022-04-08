@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/react-wizard-typeform/static/js/main.f3535f53.chunk.js",
-    "main.js.map": "/react-wizard-typeform/static/js/main.f3535f53.chunk.js.map",
-    "runtime-main.js": "/react-wizard-typeform/static/js/runtime-main.479a58c7.js",
-    "runtime-main.js.map": "/react-wizard-typeform/static/js/runtime-main.479a58c7.js.map",
-    "static/js/2.47d6c08e.chunk.js": "/react-wizard-typeform/static/js/2.47d6c08e.chunk.js",
-    "static/js/2.47d6c08e.chunk.js.map": "/react-wizard-typeform/static/js/2.47d6c08e.chunk.js.map",
-    "index.html": "/react-wizard-typeform/index.html",
-    "static/js/2.47d6c08e.chunk.js.LICENSE.txt": "/react-wizard-typeform/static/js/2.47d6c08e.chunk.js.LICENSE.txt"
+    "main.js": "/static/js/main.d42bf864.chunk.js",
+    "main.js.map": "/static/js/main.d42bf864.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.89ba3ae5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.89ba3ae5.js.map",
+    "static/js/2.bcd60ecc.chunk.js": "/static/js/2.bcd60ecc.chunk.js",
+    "static/js/2.bcd60ecc.chunk.js.map": "/static/js/2.bcd60ecc.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.bcd60ecc.chunk.js.LICENSE.txt": "/static/js/2.bcd60ecc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.479a58c7.js",
-    "static/js/2.47d6c08e.chunk.js",
-    "static/js/main.f3535f53.chunk.js"
+    "static/js/runtime-main.89ba3ae5.js",
+    "static/js/2.bcd60ecc.chunk.js",
+    "static/js/main.d42bf864.chunk.js"
   ]
 }
