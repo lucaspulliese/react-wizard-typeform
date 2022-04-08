@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.7c4a9156.js",
-    "index.html": "/index.html",
-    "main.7c4a9156.js.map": "/static/js/main.7c4a9156.js.map"
+    "main.js": "/react-wizard-typeform/static/js/main.200497b5.js",
+    "index.html": "/react-wizard-typeform/index.html",
+    "main.200497b5.js.map": "/react-wizard-typeform/static/js/main.200497b5.js.map"
   },
   "entrypoints": [
-    "static/js/main.7c4a9156.js"
+    "static/js/main.200497b5.js"
   ]
 }
